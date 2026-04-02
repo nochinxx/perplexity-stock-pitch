@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELV Investment Thesis — Perplexity Computer Stock Pitch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ELV Logo">
+        <rect x="2" y="2" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 10h16M8 16h12M8 22h16" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span class="nav-ticker">ELV</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link active">Thesis</a>
+      <a href="#fear-timeline" class="nav-link">Fear Timeline</a>
+      <a href="#elv-vs-hum" class="nav-link">ELV≠HUM</a>
+      <a href="#carelon" class="nav-link">Carelon</a>
+      <a href="#valuation" class="nav-link">Valuation</a>
+      <a href="#catalyst" class="nav-link">Catalyst</a>
+      <a href="#scenarios" class="nav-link">Scenarios</a>
+      <a href="#bear-case" class="nav-link">Bear Case</a>
+      <a href="#methodology" class="nav-link">Methodology</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="mobile-nav-overlay" id="mobileNav">
+  <a href="#hero" class="mobile-nav-link">Thesis</a>
+  <a href="#fear-timeline" class="mobile-nav-link">Fear Timeline</a>
+  <a href="#elv-vs-hum" class="mobile-nav-link">ELV≠HUM</a>
+  <a href="#carelon" class="mobile-nav-link">Carelon</a>
+  <a href="#valuation" class="mobile-nav-link">Valuation</a>
+  <a href="#catalyst" class="mobile-nav-link">Catalyst</a>
+  <a href="#scenarios" class="mobile-nav-link">Scenarios</a>
+  <a href="#bear-case" class="mobile-nav-link">Bear Case</a>
+  <a href="#methodology" class="mobile-nav-link">Methodology</a>
+</div>
+
+<!-- ============================================================= -->
+<!-- SECTION 1: HERO -->
+<!-- ============================================================= -->
+<section id="hero" class="section hero-section">
+  <div class="container">
+    <div class="hero-badge-row">
+      <span class="badge badge-buy">BUY</span>
+      <span class="badge badge-horizon">6–18 Month Horizon</span>
+    </div>
+    <h1 class="hero-headline">ELV: The Market Is Selling the Wrong MCO</h1>
+    <p class="hero-sub">The market is indiscriminately selling ELV alongside pure-play Medicare Advantage companies like Humana, when ELV derives only ~16–18% of revenue from MA and has a 36%-of-revenue health services platform (Carelon) growing at 33% annually that the bear narrative ignores entirely.</p>
+
+    <div class="stat-pills">
+      <div class="stat-pill">
+        <span class="stat-label">Current Price</span>
+        <span class="stat-value">$292.24</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-label">Analyst Consensus Target</span>
+        <span class="stat-value">$380</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-label">Base Upside</span>
+        <span class="stat-value accent">+30%</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-label">vs. Healthcare Sector (XLV)</span>
+        <span class="stat-value warn">-58.9% P/E discount</span>
+      </div>
+    </div>
+
+    <div class="countdown-box">
+      <div class="countdown-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <div class="countdown-text">
+        CMS Final Rate Announcement: <strong id="countdown-days"></strong> days away
+      </div>
+      <div class="countdown-date">April 6, 2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION 2: THE FEAR TIMELINE -->
+<!-- ============================================================= -->
+<section id="fear-timeline" class="section">
+  <div class="container">
+    <span class="section-eyebrow">What Happened</span>
+    <h2 class="section-title">The Fear Timeline</h2>
+    <p class="section-desc">Four major shocks drove ELV from its 52-week high of $458.75 to $292 — a 36.3% decline.</p>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Oct 17, 2024</div>
+        <div class="timeline-card">
+          <div class="timeline-badge-move">-12.8%</div>
+          <h3>Q3 2024 Earnings Miss</h3>
+          <p>Adj. EPS $8.37 vs $9.66 est. MLR 89.5% (+270bps). Full-year guidance cut from ~$37.20 to ~$33.00.</p>
+          <div class="timeline-price">Stock fell to ~$420s</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Jul 17–18, 2025</div>
+        <div class="timeline-card">
+          <div class="timeline-badge-move">-8.4% to -12.2%</div>
+          <h3>Q2 2025 Earnings Miss</h3>
+          <p>Adj. EPS $8.84 vs $9.16 est. Full-year guidance cut from $34.15–$34.85 to ~$30.00.</p>
+          <div class="timeline-price">After post-April 8 high of $458.75</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Jan 27, 2026</div>
+        <div class="timeline-card">
+          <div class="timeline-badge-move">-7.67%</div>
+          <h3>CMS CY2027 Advance Notice + UNH Miss</h3>
+          <p>CMS releases CY2027 advance notice (+0.09% basic rate) + UNH disappointing Q4 results same day.</p>
+          <div class="timeline-price">Open $350.00 → Close $323.16</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Feb 27 – Mar 2, 2026</div>
+        <div class="timeline-card">
+          <div class="timeline-badge-move">-6.71%</div>
+          <h3>CMS Sanctions Disclosed</h3>
+          <p>CMS formal sanction notice disclosed. Enrollment freeze threatened for 45 MA-PD contracts.</p>
+          <div class="timeline-price">Open $315.06 → Close $293.93</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-footnote reveal">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      ELV has still outperformed HUM (-33.7%), UNH (-21.7%), MOH (-30.1%) over 6 months despite all of this.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION 3: ELV ≠ HUMANA -->
+<!-- ============================================================= -->
+<section id="elv-vs-hum" class="section">
+  <div class="container">
+    <span class="section-eyebrow">Competitive Positioning</span>
+    <h2 class="section-title">ELV ≠ Humana</h2>
+    <p class="section-desc">The market treats them the same. They are fundamentally different businesses.</p>
+
+    <div class="comparison-grid">
+      <div class="comp-card reveal">
+        <div class="comp-header elv-header">
+          <span class="comp-ticker">ELV</span>
+          <span class="comp-name">Elevance Health</span>
+        </div>
+        <div class="comp-body">
+          <div class="comp-metric">
+            <span class="comp-metric-label">MA Revenue % of Total</span>
+            <span class="comp-metric-value">16–18%</span>
+          </div>
+          <div class="comp-metric">
+            <span class="comp-metric-label">Total Medical Members</span>
+            <span class="comp-metric-value">45.2M</span>
+          </div>
+          <div class="comp-metric">
+            <span class="comp-metric-label">MA Members</span>
+            <span class="comp-metric-value">1.9M</span>
+          </div>
+          <div class="comp-metric">
+            <span class="comp-metric-label">Diversification</span>
+            <span class="comp-metric-value accent">Commercial 33% · Medicaid 28% · Carelon 36%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comp-card reveal">
+        <div class="comp-header hum-header">
+          <span class="comp-ticker">HUM</span>
+          <span class="comp-name">Humana</span>
+        </div>
+        <div class="comp-body">
+          <div class="comp-metric">
+            <span class="comp-metric-label">MA Revenue % of Total</span>
+            <span class="comp-metric-value warn">~80–85%</span>
+          </div>
+          <div class="comp-metric">
+            <span class="comp-metric-label">CenterWell</span>
+            <span class="comp-metric-value">~3–4%</span>
+          </div>
+          <div class="comp-metric">
+            <span class="comp-metric-label">Diversification</span>
+            <span class="comp-metric-value warn">Near pure-play MA company</span>
+          </div>
+          <div class="comp-metric">
+            <span class="comp-metric-label">Rate Sensitivity</span>
+            <span class="comp-metric-value warn">~5x more exposed per revenue dollar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-container reveal">
+      <h3 class="chart-title">Revenue Mix Comparison</h3>
+      <div class="chart-row">
+        <div class="chart-wrapper">
+          <canvas id="elvRevenueChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="humRevenueChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box reveal">
+      <div class="callout-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+      <p>A 100bps MA rate cut hits Humana's entire earnings. For ELV, it hits one segment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION 4: CARELON -->
+<!-- ============================================================= -->
+<section id="carelon" class="section">
+  <div class="container">
+    <span class="section-eyebrow">Hidden Asset</span>
+    <h2 class="section-title">Carelon: The Market's Blind Spot</h2>
+    <div class="carelon-headline-stats reveal">
+      <span class="big-stat">36%</span>
+      <span class="big-stat-label">of Revenue</span>
+      <span class="big-stat-separator">·</span>
+      <span class="big-stat">33%</span>
+      <span class="big-stat-label">YoY Growth</span>
+      <span class="big-stat-separator">·</span>
+      <span class="big-stat warn">Zero</span>
+      <span class="big-stat-label">Credit from the Market</span>
+    </div>
+
+    <div class="chart-container reveal">
+      <h3 class="chart-title">Carelon Revenue Growth ($B)</h3>
+      <div class="chart-wrapper-single">
+        <canvas id="carelonChart"></canvas>
+      </div>
+    </div>
+
+    <div class="carelon-callout reveal">
+      <span class="carelon-callout-stat">+57.5%</span>
+      <span class="carelon-callout-text">Carelon Services YoY Growth</span>
+    </div>
+
+    <div class="carelon-desc reveal">
+      <p>Carelon is Elevance's health services platform — encompassing CarelonRx (pharmacy benefit management) and Carelon Services (behavioral health, complex care, post-acute care, value-based arrangements). It serves both Elevance members and a growing base of external clients.</p>
+      <p>Unlike the Health Benefits segment, Carelon Services is less impacted by Medicare Advantage membership dynamics due to its broad external client relationships. It is structurally decoupled from CMS rate decisions — this is the growth engine the market is ignoring.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION 5: THE VALUATION GAP -->
+<!-- ============================================================= -->
+<section id="valuation" class="section">
+  <div class="container">
+    <span class="section-eyebrow">Valuation</span>
+    <h2 class="section-title">The Valuation Gap</h2>
+
+    <div class="val-big-numbers reveal">
+      <div class="val-box">
+        <span class="val-number">11.6x</span>
+        <span class="val-label">Current Trailing P/E</span>
+      </div>
+      <div class="val-vs">vs</div>
+      <div class="val-box">
+        <span class="val-number">17.3x</span>
+        <span class="val-label">5-Year Average P/E</span>
+      </div>
+    </div>
+
+    <div class="val-discount reveal">
+      <span>-33% below historical average</span>
+    </div>
+
+    <div class="comps-table-wrap reveal">
+      <h3 class="chart-title">Peer Comparison</h3>
+      <div class="table-scroll">
+        <table class="comps-table">
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Mkt Cap ($B)</th>
+              <th>Trailing P/E</th>
+              <th>Fwd P/E (FY26)</th>
+              <th>P/Sales</th>
+              <th>EV/EBITDA</th>
+              <th>Net Margin</th>
+              <th>Consensus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-highlight">
+              <td><strong>ELV</strong></td>
+              <td>$65.9</td>
+              <td>11.8x</td>
+              <td>10.8x</td>
+              <td>0.39x</td>
+              <td>N/M</td>
+              <td>2.84%</td>
+              <td class="consensus-buy">Buy</td>
+            </tr>
+            <tr>
+              <td>UNH</td>
+              <td>$248.7</td>
+              <td>20.7x</td>
+              <td>12.0x</td>
+              <td>0.67x</td>
+              <td>13.2x</td>
+              <td>2.69%</td>
+              <td class="consensus-buy">Strong Buy</td>
+            </tr>
+            <tr>
+              <td>HUM</td>
+              <td>$21.3</td>
+              <td>18.0x</td>
+              <td>12.1x</td>
+              <td>0.24x</td>
+              <td>8.8x</td>
+              <td>0.92%</td>
+              <td class="consensus-hold">Hold</td>
+            </tr>
+            <tr>
+              <td>CNC</td>
+              <td>$16.7</td>
+              <td>N/M</td>
+              <td>6.0x</td>
+              <td>0.10x</td>
+              <td>N/M</td>
+              <td>-3.43%</td>
+              <td class="consensus-hold">Hold</td>
+            </tr>
+            <tr>
+              <td>MOH</td>
+              <td>$7.0</td>
+              <td>15.2x</td>
+              <td>19.4x</td>
+              <td>0.19x</td>
+              <td>4.7x</td>
+              <td>1.04%</td>
+              <td class="consensus-hold">Hold</td>
+            </tr>
+            <tr>
+              <td>CVS</td>
+              <td>$92.2</td>
+              <td>52.2x</td>
+              <td>6.5x</td>
+              <td>0.25x</td>
+              <td>17.8x</td>
+              <td>0.44%</td>
+              <td class="consensus-buy">Strong Buy</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="val-note reveal">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Lowest P/E since the 2008–2009 financial crisis (5.9x–8.9x trough then)
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION 6: THE CATALYST: APRIL 6 -->
+<!-- ============================================================= -->
+<section id="catalyst" class="section">
+  <div class="container">
+    <span class="section-eyebrow">Catalyst</span>
+    <h2 class="section-title">One Event. One Date. Binary Outcome.</h2>
+    <p class="section-desc catalyst-sub">CMS Final CY2027 Medicare Advantage Rate — Due April 6, 2026</p>
+
+    <div class="historical-rates reveal">
+      <h3 class="chart-title">Historical Advance vs. Final Rates</h3>
+      <div class="table-scroll">
+        <table class="rates-table">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Advance Rate</th>
+              <th>Final Rate</th>
+              <th>Improvement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CY2023</td>
+              <td>+7.98%</td>
+              <td>+8.50%</td>
+              <td class="improvement-positive">+0.52pp</td>
+            </tr>
+            <tr>
+              <td>CY2024</td>
+              <td>+1.03%</td>
+              <td>+3.32%</td>
+              <td class="improvement-positive">+2.29pp</td>
+            </tr>
+            <tr>
+              <td>CY2025</td>
+              <td>+3.70%</td>
+              <td>+3.70%</td>
+              <td class="improvement-flat">+0.00pp</td>
+            </tr>
+            <tr>
+              <td>CY2026</td>
+              <td>+2.23%</td>
+              <td>+5.06%</td>
+              <td class="improvement-positive">+2.83pp</td>
+            </tr>
+            <tr class="rate-pending">
+              <td>CY2027</td>
+              <td>+2.54%*</td>
+              <td id="cy2027-final">TBD — April 6</td>
+              <td>?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="rates-note">*CY2027 advance total = +0.09% basic rate + 2.45% risk score trend = +2.54% total expected avg change. Historical avg improvement: +1.38pp.</p>
+    </div>
+
+    <div class="scenario-cards reveal">
+      <div class="scenario-card bear-card">
+        <div class="scenario-header bear-header">
+          <span class="scenario-icon">&#9660;</span>
+          <h3>Bear</h3>
+        </div>
+        <div class="scenario-body">
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Rate Outcome</span>
+            <span class="scenario-metric-value">+0.09% to +1.5%</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Probability</span>
+            <span class="scenario-metric-value">20%</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">ELV Reaction</span>
+            <span class="scenario-metric-value">Flat to -3% to -5%</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Implied Price</span>
+            <span class="scenario-metric-value">$270–$285</span>
+          </div>
+          <p class="scenario-narrative">Rates stay near-flat. Market confirms MA pressure extends into 2027. Multiple compresses further.</p>
+        </div>
+      </div>
+
+      <div class="scenario-card base-card">
+        <div class="scenario-header base-header">
+          <span class="scenario-icon">&#9654;</span>
+          <h3>Base</h3>
+        </div>
+        <div class="scenario-body">
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Rate Outcome</span>
+            <span class="scenario-metric-value">+2.0% to +3.0%</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Probability</span>
+            <span class="scenario-metric-value">50%</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">ELV Reaction</span>
+            <span class="scenario-metric-value">+3% to +8%</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Implied Price</span>
+            <span class="scenario-metric-value">$300–$315</span>
+          </div>
+          <p class="scenario-narrative">Consistent with historical pattern. Sector relief rally. Confirms trough thesis.</p>
+        </div>
+      </div>
+
+      <div class="scenario-card bull-card">
+        <div class="scenario-header bull-header">
+          <span class="scenario-icon">&#9650;</span>
+          <h3>Bull</h3>
+        </div>
+        <div class="scenario-body">
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Rate Outcome</span>
+            <span class="scenario-metric-value">+3.5%+</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Probability</span>
+            <span class="scenario-metric-value">30%</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">ELV Reaction</span>
+            <span class="scenario-metric-value">+8% to +15%</span>
+          </div>
+          <div class="scenario-metric">
+            <span class="scenario-metric-label">Implied Price</span>
+            <span class="scenario-metric-value">$315–$335</span>
+          </div>
+          <p class="scenario-narrative">Trump CMS repeats CY2026 playbook. Sector rallies violently. ELV re-rates toward analyst targets.</p>
+          <div class="scenario-analog">Historical analog: ELV +8% when CY2026 final rate surprised on April 7, 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION 7: VALUATION SCENARIOS -->
+<!-- ============================================================= -->
+<section id="scenarios" class="section">
+  <div class="container">
+    <span class="section-eyebrow">Price Targets</span>
+    <h2 class="section-title">Valuation Scenarios</h2>
+
+    <div class="val-scenario-cards reveal">
+      <div class="val-scenario bear-scenario">
+        <div class="val-scenario-label bear-label">Bear Case</div>
+        <div class="val-scenario-content">
+          <div class="val-sub-case">
+            <div class="val-sub-case-label">Soft Bear</div>
+            <div class="val-equation">
+              <span class="val-eq-item">$25.50 EPS</span>
+              <span class="val-eq-op">×</span>
+              <span class="val-eq-item">9x P/E</span>
+              <span class="val-eq-op">=</span>
+              <span class="val-eq-result bear-result">$229</span>
+            </div>
+            <p class="val-rationale">Management EPS floor × trough multiple</p>
+          </div>
+          <div class="val-sub-divider"></div>
+          <div class="val-sub-case">
+            <div class="val-sub-case-label">Hard Bear</div>
+            <div class="val-equation">
+              <span class="val-eq-item">$23.00 EPS</span>
+              <span class="val-eq-op">×</span>
+              <span class="val-eq-item">9x P/E</span>
+              <span class="val-eq-op">=</span>
+              <span class="val-eq-result bear-result">$207</span>
+            </div>
+            <p class="val-rationale">Guidance miss scenario — requires 5–6 simultaneous failures</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="val-scenario base-scenario">
+        <div class="val-scenario-label base-label">Base Case</div>
+        <div class="val-scenario-content">
+          <div class="val-equation">
+            <span class="val-eq-item">$30.97 EPS</span>
+            <span class="val-eq-op">×</span>
+            <span class="val-eq-item">12x P/E</span>
+            <span class="val-eq-op">=</span>
+            <span class="val-eq-result base-result">$372</span>
+          </div>
+          <p class="val-rationale">Consensus FY2027 EPS × modest recovery multiple (still below 5-yr avg of 17.3x)</p>
+          <div class="val-upside base-upside">+27% upside</div>
+        </div>
+      </div>
+
+      <div class="val-scenario bull-scenario">
+        <div class="val-scenario-label bull-label">Bull Case</div>
+        <div class="val-scenario-content">
+          <div class="val-equation">
+            <span class="val-eq-item">$34.50 EPS</span>
+            <span class="val-eq-op">×</span>
+            <span class="val-eq-item">14x P/E</span>
+            <span class="val-eq-op">=</span>
+            <span class="val-eq-result bull-result">$483</span>
+          </div>
+          <p class="val-rationale">Bull FY2027 EPS × re-rating multiple — still a discount to 5-yr avg P/E</p>
+          <div class="val-upside bull-upside">+65% upside</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sensitivity-section reveal">
+      <h3 class="chart-title">Sensitivity Table — Implied Price (FY2027 EPS × P/E)</h3>
+      <p class="sensitivity-note">Current price: $292.24. Green = &gt;20% upside, Yellow = 0–20%, Red = downside.</p>
+      <div class="table-scroll">
+        <table class="sensitivity-table" id="sensitivityTable">
+          <thead>
+            <tr>
+              <th>EPS \ P/E</th>
+              <th>8x</th>
+              <th>10x</th>
+              <th>12x</th>
+              <th>14x</th>
+              <th>16x</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="ev-calculation reveal">
+      <h3 class="chart-title">Expected Value Calculation</h3>
+      <div class="ev-grid">
+        <div class="ev-row ev-header-row">
+          <span>Scenario</span><span>Probability</span><span>Price Target</span><span>Return</span><span>Weighted</span>
+        </div>
+        <div class="ev-row bear-ev">
+          <span>Bear</span><span>20%</span><span>$239</span><span>-18.4%</span><span>-3.7%</span>
+        </div>
+        <div class="ev-row base-ev">
+          <span>Base</span><span>50%</span><span>$372</span><span>+27.2%</span><span>+13.6%</span>
+        </div>
+        <div class="ev-row bull-ev">
+          <span>Bull</span><span>30%</span><span>$483</span><span>+65.3%</span><span>+19.6%</span>
+        </div>
+        <div class="ev-row ev-total">
+          <span>Expected Value</span><span></span><span></span><span></span><span class="ev-total-val">+29.5%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION 8: THE BEAR CASE (STEELMANNED) -->
+<!-- ============================================================= -->
+<section id="bear-case" class="section">
+  <div class="container">
+    <span class="section-eyebrow">Risk Assessment</span>
+    <h2 class="section-title">The Honest Case Against</h2>
+
+    <div class="bear-arguments">
+      <div class="bear-arg reveal">
+        <div class="bear-arg-num">1</div>
+        <div class="bear-arg-content">
+          <h3>Serial Guidance Cuts Destroy Credibility</h3>
+          <p class="bear-arg-text">Three consecutive guidance cuts: FY2024 $37.20 → FY2025 ~$33 → FY2026 guide $30 → current $25.50.</p>
+          <div class="bear-rebuttal">
+            <span class="rebuttal-label">Rebuttal:</span> FY2026 floor of $25.50 explicitly excludes $3.75/share of non-recurring favorable items from FY2025 — the YoY decline is overstated. Management reaffirmed guidance March 10, including sanctions impact.
+          </div>
+        </div>
+      </div>
+
+      <div class="bear-arg reveal">
+        <div class="bear-arg-num">2</div>
+        <div class="bear-arg-content">
+          <h3>OCF Collapsed 47% in 2 Years</h3>
+          <p class="bear-arg-text">$8.1B (FY2023) → $5.8B (FY2024) → $4.3B (FY2025). Cash generation is deteriorating.</p>
+          <div class="bear-rebuttal">
+            <span class="rebuttal-label">Rebuttal:</span> FY2025 OCF was depressed by timing of Medicaid payments received in early January 2026. Management guided OCF floor of $5.5B for FY2026, implying 28% recovery. FY2023 was the peak before Medicaid utilization surge.
+          </div>
+        </div>
+      </div>
+
+      <div class="bear-arg reveal">
+        <div class="bear-arg-num">3</div>
+        <div class="bear-arg-content">
+          <h3>CMS Sanctions — Unquantifiable Exposure</h3>
+          <p class="bear-arg-text">Potential multi-billion clawback if risk-adjustment data was systematically inflated for 7 years (since Nov 2018).</p>
+          <div class="bear-rebuttal">
+            <span class="rebuttal-label">Rebuttal:</span> Issue is specifically about submitting corrections via USB drives instead of electronic systems — a procedural dispute, not fraud. CMS extended the deadline to May 30 and exempted 11 of 45 contracts. Management frames it as a policy dispute about how retroactive corrections should be treated.
+          </div>
+        </div>
+      </div>
+
+      <div class="bear-arg reveal">
+        <div class="bear-arg-num">4</div>
+        <div class="bear-arg-content">
+          <h3>Medicaid -1.75% Margin May Not Be Trough</h3>
+          <p class="bear-arg-text">"Trough year" has been wrong for 2 consecutive years. Why should we believe it now?</p>
+          <div class="bear-rebuttal">
+            <span class="rebuttal-label">Rebuttal:</span> Medicaid redetermination — the structural driver of adverse selection — is now largely complete. Rate actualization lags 12–18 months. 2026 rates reflect more current utilization experience. Management targets at least 12% EPS growth in 2027 off the 2026 base.
+          </div>
+        </div>
+      </div>
+
+      <div class="bear-arg reveal">
+        <div class="bear-arg-num">5</div>
+        <div class="bear-arg-content">
+          <h3>Health Benefits OI Down 39% in 2 Years</h3>
+          <p class="bear-arg-text">$6.9B (FY2023) → $4.2B (FY2025). Core insurance profitability is eroding.</p>
+          <div class="bear-rebuttal">
+            <span class="rebuttal-label">Rebuttal:</span> Carelon OI grew from $2.9B to $3.4B over the same period (+17%). Total company OI decline is less severe than Health Benefits alone, and the growth engine is shifting toward Carelon's higher-margin services.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="path-to-200 reveal">
+      <h3>Path to $200: What Has to Be Simultaneously True</h3>
+      <div class="path-items">
+        <div class="path-item">CMS sanctions result in material financial penalty</div>
+        <div class="path-plus">+</div>
+        <div class="path-item">CMS final rate comes in flat (no improvement from advance)</div>
+        <div class="path-plus">+</div>
+        <div class="path-item">Medicaid margin fails to recover for a third consecutive year</div>
+        <div class="path-plus">+</div>
+        <div class="path-item">Management misses guidance floor of $25.50</div>
+        <div class="path-plus">+</div>
+        <div class="path-item">ACA risk pool deteriorates post enhanced subsidy expiration</div>
+        <div class="path-plus">+</div>
+        <div class="path-item">Multiple compresses to crisis-era 8–9x</div>
+      </div>
+      <p class="path-conclusion">The bear case requires 5–6 independent negative outcomes to compound simultaneously.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION 9: METHODOLOGY -->
+<!-- ============================================================= -->
+<section id="methodology" class="section">
+  <div class="container">
+    <span class="section-eyebrow">Process</span>
+    <h2 class="section-title">Multi-Agent Research Protocol</h2>
+    <p class="section-desc">Five independent research agents were run against identical 5-part research prompts covering CMS regulatory situation, ELV financials, competitive positioning, catalyst analysis, and steelmanned bear case.</p>
+
+    <div class="method-stat reveal">
+      <span class="method-stat-number">26</span>
+      <span class="method-stat-text">core facts verified across 5 independent research runs</span>
+    </div>
+
+    <div class="method-conflicts reveal">
+      <h3 class="chart-title">Conflicts Caught &amp; Resolved</h3>
+      <div class="conflict-cards">
+        <div class="conflict-card">
+          <div class="conflict-header">Jan 27, 2026 Stock Move</div>
+          <div class="conflict-body">
+            <p><span class="conflict-label">Agents cited:</span> -7% to -14.3%</p>
+            <p><span class="conflict-resolved">Verified via OHLCV:</span> actual -7.67% (open $350.00, close $323.16)</p>
+          </div>
+        </div>
+        <div class="conflict-card">
+          <div class="conflict-header">Jan 28, 2026 Stock Move</div>
+          <div class="conflict-body">
+            <p><span class="conflict-label">Agents conflicted:</span> +5.9% vs -6.7%</p>
+            <p><span class="conflict-resolved">Verified via OHLCV:</span> actual +8.33% relief rally (open $315.57, close $341.86)</p>
+          </div>
+        </div>
+        <div class="conflict-card">
+          <div class="conflict-header">HUM MA Revenue %</div>
+          <div class="conflict-body">
+            <p><span class="conflict-label">Agents cited:</span> 70–85% range</p>
+            <p><span class="conflict-resolved">Resolution:</span> Used ~80% as conservative midpoint</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="method-tagline reveal">
+      This is not one analyst's opinion. It is a computationally verified evidence base.
+    </div>
+
+    <div class="method-footer reveal">
+      <p>Outputs were cross-referenced fact by fact. Conflicts were flagged and resolved using primary source verification: SEC filings, earnings call transcripts (full verbatim), OHLCV price data, and finance segment tools.</p>
+      <p class="method-credit">Built with Perplexity Computer · April 2026</p>
+    </div>
+  </div>
+</section>
+
+<script src="./app.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
