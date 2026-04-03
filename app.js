@@ -245,37 +245,28 @@
   /* ----------------------------------------------------------- */
   /* SECTION 7: SENSITIVITY TABLE                                 */
   /* ----------------------------------------------------------- */
+  // Sensitivity table — 5×5: EPS $24–$36 (step $3) × P/E 8x–16x (step 2x)
+  // Color: above $292.75 = green, below = red
+  const REFERENCE_PRICE = 292.75;
   const sensitivityData = {
-    currentPrice: 292.75,
-    eps: [24, 26, 28, 31, 34],
-    pe: [8, 10, 12, 14, 16],
-    matrix: [
-      [192, 240, 288, 336, 384],
-      [208, 260, 312, 364, 416],
-      [224, 280, 336, 392, 448],
-      [248, 310, 372, 434, 496],
-      [272, 340, 408, 476, 544]
-    ]
+    eps: [24, 27, 30, 33, 36],
+    pe:  [8,  10, 12, 14, 16]
   };
 
   const tbody = document.querySelector('#sensitivityTable tbody');
   if (tbody) {
-    sensitivityData.eps.forEach((eps, i) => {
+    sensitivityData.eps.forEach((eps) => {
       const tr = document.createElement('tr');
       const tdEps = document.createElement('td');
       tdEps.textContent = '$' + eps;
       tr.appendChild(tdEps);
 
-      sensitivityData.pe.forEach((pe, j) => {
-        const price = sensitivityData.matrix[i][j];
-        const upside = ((price - sensitivityData.currentPrice) / sensitivityData.currentPrice * 100).toFixed(1);
+      sensitivityData.pe.forEach((pe) => {
+        const price = eps * pe;
+        const upside = ((price - REFERENCE_PRICE) / REFERENCE_PRICE * 100).toFixed(1);
         const td = document.createElement('td');
         td.innerHTML = '$' + price + '<br><span style="font-size:10px;opacity:0.7">' + (upside > 0 ? '+' : '') + upside + '%</span>';
-
-        if (upside > 20) td.className = 'cell-green';
-        else if (upside >= 0) td.className = 'cell-yellow';
-        else td.className = 'cell-red';
-
+        td.className = price >= REFERENCE_PRICE ? 'cell-green' : 'cell-red';
         tr.appendChild(td);
       });
 

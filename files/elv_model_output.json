@@ -1,0 +1,434 @@
+{
+  "model_metadata": {
+    "title": "ELV (Elevance Health) Investment Thesis Financial Model",
+    "generated_at": "2026-04-01T17:45:00-07:00",
+    "current_price": 292.24,
+    "data_sources": [
+      "finance_quotes (real-time)",
+      "finance_estimates (consensus)",
+      "finance_analyst_research (price targets)",
+      "finance_company_ratios (historical multiples)",
+      "finance_financials (income statements)",
+      "finance_company_profile (company info)"
+    ],
+    "locked_assumptions": {
+      "fy2025_adj_eps": 30.29,
+      "fy2026_mgmt_floor_eps": 25.5,
+      "fy2026_consensus_eps": 27.63,
+      "fy2027_mgmt_growth_target": "at least 12% off 2026 base",
+      "fy2027_consensus_eps": 30.97
+    }
+  },
+  "comps_table": [
+    {
+      "ticker": "ELV",
+      "company_name": "Elevance Health Inc.",
+      "market_cap_B": 65.9,
+      "trailing_pe": 11.84,
+      "forward_pe_fy2026": 10.8,
+      "ev_ebitda": -5.71,
+      "p_sales": 0.39,
+      "revenue_growth_fy24_to_fy25_pct": 12.6,
+      "net_margin_fy25_pct": 2.84,
+      "analyst_consensus_target": 380.36,
+      "analyst_consensus_rating": "Buy",
+      "source": "https://perplexity.ai/finance/ELV"
+    },
+    {
+      "ticker": "UNH",
+      "company_name": "UnitedHealth Group Inc.",
+      "market_cap_B": 248.7,
+      "trailing_pe": 20.72,
+      "forward_pe_fy2026": 11.99,
+      "ev_ebitda": 13.15,
+      "p_sales": 0.67,
+      "revenue_growth_fy24_to_fy25_pct": 11.8,
+      "net_margin_fy25_pct": 2.69,
+      "analyst_consensus_target": 381.24,
+      "analyst_consensus_rating": "Strong Buy",
+      "source": "https://perplexity.ai/finance/UNH"
+    },
+    {
+      "ticker": "HUM",
+      "company_name": "Humana Inc.",
+      "market_cap_B": 21.3,
+      "trailing_pe": 17.99,
+      "forward_pe_fy2026": 12.09,
+      "ev_ebitda": 8.78,
+      "p_sales": 0.24,
+      "revenue_growth_fy24_to_fy25_pct": 10.1,
+      "net_margin_fy25_pct": 0.92,
+      "analyst_consensus_target": 225.07,
+      "analyst_consensus_rating": "Hold",
+      "source": "https://perplexity.ai/finance/HUM"
+    },
+    {
+      "ticker": "CNC",
+      "company_name": "Centene Corporation",
+      "market_cap_B": 16.7,
+      "trailing_pe": "N/M (negative earnings)",
+      "forward_pe_fy2026": 6.02,
+      "ev_ebitda": -2.74,
+      "p_sales": 0.1,
+      "revenue_growth_fy24_to_fy25_pct": 19.4,
+      "net_margin_fy25_pct": -3.43,
+      "analyst_consensus_target": 42.73,
+      "analyst_consensus_rating": "Hold",
+      "source": "https://perplexity.ai/finance/CNC"
+    },
+    {
+      "ticker": "MOH",
+      "company_name": "Molina Healthcare Inc.",
+      "market_cap_B": 7.0,
+      "trailing_pe": 15.24,
+      "forward_pe_fy2026": 19.43,
+      "ev_ebitda": 4.66,
+      "p_sales": 0.19,
+      "revenue_growth_fy24_to_fy25_pct": 11.7,
+      "net_margin_fy25_pct": 1.04,
+      "analyst_consensus_target": 151.0,
+      "analyst_consensus_rating": "Hold",
+      "source": "https://perplexity.ai/finance/MOH"
+    },
+    {
+      "ticker": "CVS",
+      "company_name": "CVS Health Corporation",
+      "market_cap_B": 92.2,
+      "trailing_pe": 52.15,
+      "forward_pe_fy2026": 6.52,
+      "ev_ebitda": 17.76,
+      "p_sales": 0.25,
+      "revenue_growth_fy24_to_fy25_pct": 7.8,
+      "net_margin_fy25_pct": 0.44,
+      "analyst_consensus_target": 95.75,
+      "analyst_consensus_rating": "Strong Buy",
+      "source": "https://perplexity.ai/finance/CVS"
+    }
+  ],
+  "comps_metrics_best_worst": {
+    "trailing_pe": {
+      "best (lowest)": "ELV",
+      "worst (highest)": "CVS",
+      "note": "CNC excluded (negative earnings)"
+    },
+    "forward_pe_fy2026": {
+      "best (lowest)": "CNC",
+      "worst (highest)": "MOH"
+    },
+    "p_sales": {
+      "best (lowest)": "CNC",
+      "worst (highest)": "UNH"
+    },
+    "revenue_growth": {
+      "best (highest)": "CNC",
+      "worst (lowest)": "CVS"
+    },
+    "net_margin": {
+      "best (highest)": "ELV",
+      "worst (lowest)": "CNC"
+    },
+    "market_cap": {
+      "best (largest)": "UNH",
+      "worst (smallest)": "MOH"
+    }
+  },
+  "scenario_model": {
+    "bull": {
+      "name": "Bull Case",
+      "key_assumptions": [
+        "CMS final rate notice surprises to the upside with better-than-expected Medicare Advantage rate increases",
+        "Regulatory sanctions resolved, restoring Carelon growth trajectory",
+        "Medicaid redetermination trough confirmed in H2 2026 with membership stabilization",
+        "Medical cost trend improves in H2 2026 as utilization normalizes",
+        "Successful execution of Carelon synergies drives margin expansion"
+      ],
+      "fy2026_eps": 29.0,
+      "fy2026_eps_rationale": "Above consensus at $29.00 driven by favorable CMS rates and sanction resolution unlocking Carelon revenue; above consensus of $27.63 and well above management floor of $25.50",
+      "fy2027_eps": 34.5,
+      "fy2027_eps_rationale": "19% growth off bull FY2026 base ($29.00 * 1.19), reflecting full Medicaid recovery, Carelon rebound, and margin normalization toward historical levels",
+      "pe_multiple": 14.0,
+      "pe_justification": "Re-rating toward 14x forward P/E as execution proof emerges and sanctions overhang is removed; still a discount to ELV's 5-year average of 17.3x and UNH's current 12x fwd P/E, reflecting residual Medicaid/regulatory risk",
+      "implied_price_target": 483.0,
+      "upside_pct": 65.3,
+      "source": "Locked assumptions; scenario constructed using management guidance from https://perplexity.ai/finance/ELV"
+    },
+    "base": {
+      "name": "Base Case",
+      "key_assumptions": [
+        "CMS final rate delivers modest improvement in line with preliminary estimates",
+        "Normal execution on FY2026 guidance of at least $25.50 Adj EPS",
+        "Medicaid margins stabilize but no meaningful re-enrollment lift until 2027",
+        "Medical cost trend remains elevated but manageable",
+        "Consensus estimates are approximately correct"
+      ],
+      "fy2026_eps": 27.63,
+      "fy2026_eps_rationale": "Street consensus at $27.63; represents a -8.8% EPS decline from FY2025 Adj EPS of $30.29, consistent with the Medicaid margin compression cycle",
+      "fy2027_eps": 30.97,
+      "fy2027_eps_rationale": "Consensus FY2027 EPS of $30.97 implies 12.1% growth off FY2026, roughly in line with management's target of at least 12% growth",
+      "pe_multiple": 12.0,
+      "pe_justification": "12x forward P/E applied to FY2027 EPS; represents a modest recovery from the current compressed ~10.6x multiple but remains well below the 5-year average of 17.3x given ongoing earnings uncertainty",
+      "implied_price_target": 371.64,
+      "upside_pct": 27.2,
+      "source": "Locked assumptions; consensus from https://perplexity.ai/finance/ELV"
+    },
+    "bear": {
+      "name": "Bear Case",
+      "key_assumptions": [
+        "CMS final rate flat, providing no relief to Medicare Advantage margins",
+        "Regulatory sanctions persist, continuing to impair Carelon growth and reputation",
+        "Medicaid membership deteriorates further with adverse selection in remaining book",
+        "Medical cost trend accelerates beyond management expectations",
+        "Potential goodwill impairment or reserve strengthening required"
+      ],
+      "fy2026_eps": 25.5,
+      "fy2026_eps_rationale": "Management floor of $25.50; assumes worst case in the guidance range with no upside from CMS or Carelon",
+      "fy2027_eps": 26.5,
+      "fy2027_eps_rationale": "Only 3.9% growth off depressed base, reflecting persistent headwinds and inability to achieve management's 12% growth target; Medicaid deterioration and sanctions act as structural drags",
+      "pe_multiple": 9.0,
+      "pe_justification": "9x forward P/E reflects continued multiple compression toward trough valuation; at ELV's COVID-era trough the stock traded near 8x; 9x accounts for sustained MCO sector pressure but avoids complete capitulation pricing",
+      "implied_price_target": 238.5,
+      "upside_pct": -18.4,
+      "source": "Locked assumptions; management floor from https://perplexity.ai/finance/ELV"
+    }
+  },
+  "sensitivity_table": {
+    "description": "Implied price targets based on FY2027 EPS * P/E multiple. Color coding: green (>20% upside), yellow (0-20% upside), red (downside). Current price: $292.24",
+    "current_price": 292.24,
+    "eps_estimates": [
+      24,
+      26,
+      28,
+      31,
+      34
+    ],
+    "pe_multiples": [
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "matrix": [
+      {
+        "fy2027_eps": 24,
+        "targets": [
+          {
+            "pe_multiple": 8,
+            "implied_price": 192,
+            "upside_pct": -34.3,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 10,
+            "implied_price": 240,
+            "upside_pct": -17.9,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 12,
+            "implied_price": 288,
+            "upside_pct": -1.5,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 14,
+            "implied_price": 336,
+            "upside_pct": 15.0,
+            "color": "yellow"
+          },
+          {
+            "pe_multiple": 16,
+            "implied_price": 384,
+            "upside_pct": 31.4,
+            "color": "green"
+          }
+        ]
+      },
+      {
+        "fy2027_eps": 26,
+        "targets": [
+          {
+            "pe_multiple": 8,
+            "implied_price": 208,
+            "upside_pct": -28.8,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 10,
+            "implied_price": 260,
+            "upside_pct": -11.0,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 12,
+            "implied_price": 312,
+            "upside_pct": 6.8,
+            "color": "yellow"
+          },
+          {
+            "pe_multiple": 14,
+            "implied_price": 364,
+            "upside_pct": 24.6,
+            "color": "green"
+          },
+          {
+            "pe_multiple": 16,
+            "implied_price": 416,
+            "upside_pct": 42.3,
+            "color": "green"
+          }
+        ]
+      },
+      {
+        "fy2027_eps": 28,
+        "targets": [
+          {
+            "pe_multiple": 8,
+            "implied_price": 224,
+            "upside_pct": -23.4,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 10,
+            "implied_price": 280,
+            "upside_pct": -4.2,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 12,
+            "implied_price": 336,
+            "upside_pct": 15.0,
+            "color": "yellow"
+          },
+          {
+            "pe_multiple": 14,
+            "implied_price": 392,
+            "upside_pct": 34.1,
+            "color": "green"
+          },
+          {
+            "pe_multiple": 16,
+            "implied_price": 448,
+            "upside_pct": 53.3,
+            "color": "green"
+          }
+        ]
+      },
+      {
+        "fy2027_eps": 31,
+        "targets": [
+          {
+            "pe_multiple": 8,
+            "implied_price": 248,
+            "upside_pct": -15.1,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 10,
+            "implied_price": 310,
+            "upside_pct": 6.1,
+            "color": "yellow"
+          },
+          {
+            "pe_multiple": 12,
+            "implied_price": 372,
+            "upside_pct": 27.3,
+            "color": "green"
+          },
+          {
+            "pe_multiple": 14,
+            "implied_price": 434,
+            "upside_pct": 48.5,
+            "color": "green"
+          },
+          {
+            "pe_multiple": 16,
+            "implied_price": 496,
+            "upside_pct": 69.7,
+            "color": "green"
+          }
+        ]
+      },
+      {
+        "fy2027_eps": 34,
+        "targets": [
+          {
+            "pe_multiple": 8,
+            "implied_price": 272,
+            "upside_pct": -6.9,
+            "color": "red"
+          },
+          {
+            "pe_multiple": 10,
+            "implied_price": 340,
+            "upside_pct": 16.3,
+            "color": "yellow"
+          },
+          {
+            "pe_multiple": 12,
+            "implied_price": 408,
+            "upside_pct": 39.6,
+            "color": "green"
+          },
+          {
+            "pe_multiple": 14,
+            "implied_price": 476,
+            "upside_pct": 62.9,
+            "color": "green"
+          },
+          {
+            "pe_multiple": 16,
+            "implied_price": 544,
+            "upside_pct": 86.1,
+            "color": "green"
+          }
+        ]
+      }
+    ]
+  },
+  "valuation_context": {
+    "elv_current_forward_pe": 10.6,
+    "benchmarks": {
+      "elv_5yr_average_pe": {
+        "value": 17.3,
+        "elv_discount_pct": -38.7,
+        "note": "ELV trades at a significant discount to its own 5-year average",
+        "source": "Locked assumption from research"
+      },
+      "xlv_healthcare_sector_pe": {
+        "value": 25.82,
+        "elv_discount_pct": -58.9,
+        "note": "XLV is a broad healthcare sector ETF; MCOs naturally trade below diversified healthcare. ELV's discount is still extreme.",
+        "source": "https://perplexity.ai/finance/XLV"
+      }
+    },
+    "peer_comparisons": {
+      "UNH": {
+        "forward_pe": 11.99,
+        "elv_discount_or_premium_pct": -11.6,
+        "source": "https://perplexity.ai/finance/UNH"
+      },
+      "HUM": {
+        "forward_pe": 12.09,
+        "elv_discount_or_premium_pct": -12.3,
+        "source": "https://perplexity.ai/finance/HUM"
+      },
+      "CNC": {
+        "forward_pe": 6.02,
+        "elv_discount_or_premium_pct": 76.1,
+        "source": "https://perplexity.ai/finance/CNC"
+      },
+      "MOH": {
+        "forward_pe": 19.43,
+        "elv_discount_or_premium_pct": -45.4,
+        "source": "https://perplexity.ai/finance/MOH"
+      },
+      "CVS": {
+        "forward_pe": 6.52,
+        "elv_discount_or_premium_pct": 62.6,
+        "source": "https://perplexity.ai/finance/CVS"
+      }
+    },
+    "source": "Forward P/E computed as price / FY2026 consensus EPS from finance_estimates and finance_quotes"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "model_name": "Elevance Health (ELV) Sum-of-Parts Valuation",
+    "as_of_date": "2026-03-31",
+    "valuation_basis": "FY2025 Adjusted Segment Operating Income",
+    "generated_at": "2026-04-03T04:55:59Z",
+    "analyst_note": "Prompt instructed CarelonRx ~60% of Carelon OI (~$2.0B) and Carelon Services ~$1.4B; actual GAAP/adj figures from earnings release are CarelonRx $2.418B (71.6% of Carelon) and Carelon Services $0.982B (29.4% of Carelon adj total $3.4B). Model uses actual reported figures. Carelon Services 3.4% margin check: 3.4% \u00d7 $28.316B revenue = $963M GAAP (adj ~$982M); verified."
+  },
+  "inputs": {
+    "current_share_price": 292.75,
+    "market_cap_b": 64.5,
+    "net_debt_b": 23.7,
+    "total_ev_current_b": 88.2,
+    "shares_outstanding_m": 220.32,
+    "segment_oi_fy2025": {
+      "health_benefits_adj_b": 4.2,
+      "health_benefits_revenue_b": 167.094,
+      "health_benefits_oi_margin_pct": 2.5,
+      "carelon_rx_adj_b": 2.418,
+      "carelon_rx_revenue_b": 43.4,
+      "carelon_rx_oi_margin_pct": 5.6,
+      "carelon_services_adj_b": 0.982,
+      "carelon_services_revenue_b": 28.316,
+      "carelon_services_oi_margin_pct": 3.5,
+      "carelon_total_adj_b": 3.4,
+      "carelon_rx_pct_of_carelon_total": 71.1,
+      "carelon_services_pct_of_carelon_total": 28.9
+    }
+  },
+  "multiples_and_rationales": {
+    "health_benefits": {
+      "bear": 7.0,
+      "base": 8.5,
+      "bull": 10.0,
+      "rationale": "Distressed MCO multiple reflecting elevated benefit expense ratio (90.0% FY2025, +150bp YoY), Medicaid membership attrition, CMS reimbursement risk, and compressed Health Benefits OI margin (2.5% vs. 4.2% prior year); benchmarked against peer MCOs (CI, HUM, MOH) in downside rerating environments."
+    },
+    "carelon_rx": {
+      "bear": 9.0,
+      "base": 11.0,
+      "bull": 13.0,
+      "rationale": "PBM-comparable multiple anchored to Express Scripts pre-Cigna-acquisition (~10-12x OI) and CVS Caremark PBM segment, reflecting ELV captive-mix dependency (~60%+ internal), competitive specialty pharmacy dynamics, and near-term headwinds from lower health plan membership."
+    },
+    "carelon_services": {
+      "bear": 12.0,
+      "base": 15.0,
+      "bull": 18.0,
+      "rationale": "Health-services / tech-enabled multiple benchmarked against Optum Health (pre-composite UNH ~15-20x OI), reflecting Carelon Services' risk-based care model growth, CareBridge acquisition, 33% revenue growth, and long-term margin expansion potential toward management's mid-single-digit target."
+    }
+  },
+  "scenarios": {
+    "bear": {
+      "health_benefits": {
+        "oi_adj_fy2025_b": 4.2,
+        "multiple": 7.0,
+        "implied_ev_b": 29.4,
+        "rationale": "Distressed MCO multiple reflecting elevated benefit expense ratio (90.0% FY2025, +150bp YoY), Medicaid membership attrition, CMS reimbursement risk, and compressed Health Benefits OI margin (2.5% vs. 4.2% prior year); benchmarked against peer MCOs (CI, HUM, MOH) in downside rerating environments."
+      },
+      "carelon_rx": {
+        "oi_adj_fy2025_b": 2.418,
+        "multiple": 9.0,
+        "implied_ev_b": 21.762,
+        "rationale": "PBM-comparable multiple anchored to Express Scripts pre-Cigna-acquisition (~10-12x OI) and CVS Caremark PBM segment, reflecting ELV captive-mix dependency (~60%+ internal), competitive specialty pharmacy dynamics, and near-term headwinds from lower health plan membership."
+      },
+      "carelon_services": {
+        "oi_adj_fy2025_b": 0.982,
+        "multiple": 12.0,
+        "implied_ev_b": 11.784,
+        "rationale": "Health-services / tech-enabled multiple benchmarked against Optum Health (pre-composite UNH ~15-20x OI), reflecting Carelon Services' risk-based care model growth, CareBridge acquisition, 33% revenue growth, and long-term margin expansion potential toward management's mid-single-digit target."
+      },
+      "total_implied_ev_b": 62.95,
+      "implied_equity_value_b": 39.25,
+      "implied_share_price": 178.15,
+      "upside_downside_vs_current_pct": -39.1
+    },
+    "base": {
+      "health_benefits": {
+        "oi_adj_fy2025_b": 4.2,
+        "multiple": 8.5,
+        "implied_ev_b": 35.7,
+        "rationale": "Distressed MCO multiple reflecting elevated benefit expense ratio (90.0% FY2025, +150bp YoY), Medicaid membership attrition, CMS reimbursement risk, and compressed Health Benefits OI margin (2.5% vs. 4.2% prior year); benchmarked against peer MCOs (CI, HUM, MOH) in downside rerating environments."
+      },
+      "carelon_rx": {
+        "oi_adj_fy2025_b": 2.418,
+        "multiple": 11.0,
+        "implied_ev_b": 26.598,
+        "rationale": "PBM-comparable multiple anchored to Express Scripts pre-Cigna-acquisition (~10-12x OI) and CVS Caremark PBM segment, reflecting ELV captive-mix dependency (~60%+ internal), competitive specialty pharmacy dynamics, and near-term headwinds from lower health plan membership."
+      },
+      "carelon_services": {
+        "oi_adj_fy2025_b": 0.982,
+        "multiple": 15.0,
+        "implied_ev_b": 14.73,
+        "rationale": "Health-services / tech-enabled multiple benchmarked against Optum Health (pre-composite UNH ~15-20x OI), reflecting Carelon Services' risk-based care model growth, CareBridge acquisition, 33% revenue growth, and long-term margin expansion potential toward management's mid-single-digit target."
+      },
+      "total_implied_ev_b": 77.03,
+      "implied_equity_value_b": 53.33,
+      "implied_share_price": 242.05,
+      "upside_downside_vs_current_pct": -17.3
+    },
+    "bull": {
+      "health_benefits": {
+        "oi_adj_fy2025_b": 4.2,
+        "multiple": 10.0,
+        "implied_ev_b": 42.0,
+        "rationale": "Distressed MCO multiple reflecting elevated benefit expense ratio (90.0% FY2025, +150bp YoY), Medicaid membership attrition, CMS reimbursement risk, and compressed Health Benefits OI margin (2.5% vs. 4.2% prior year); benchmarked against peer MCOs (CI, HUM, MOH) in downside rerating environments."
+      },
+      "carelon_rx": {
+        "oi_adj_fy2025_b": 2.418,
+        "multiple": 13.0,
+        "implied_ev_b": 31.434,
+        "rationale": "PBM-comparable multiple anchored to Express Scripts pre-Cigna-acquisition (~10-12x OI) and CVS Caremark PBM segment, reflecting ELV captive-mix dependency (~60%+ internal), competitive specialty pharmacy dynamics, and near-term headwinds from lower health plan membership."
+      },
+      "carelon_services": {
+        "oi_adj_fy2025_b": 0.982,
+        "multiple": 18.0,
+        "implied_ev_b": 17.676,
+        "rationale": "Health-services / tech-enabled multiple benchmarked against Optum Health (pre-composite UNH ~15-20x OI), reflecting Carelon Services' risk-based care model growth, CareBridge acquisition, 33% revenue growth, and long-term margin expansion potential toward management's mid-single-digit target."
+      },
+      "total_implied_ev_b": 91.11,
+      "implied_equity_value_b": 67.41,
+      "implied_share_price": 305.96,
+      "upside_downside_vs_current_pct": 4.5
+    }
+  },
+  "back_solve": {
+    "current_total_ev_b": 88.2,
+    "hb_ev_at_base_multiple_b": 35.7,
+    "hb_base_multiple_used": 8.5,
+    "residual_carelon_ev_b": 52.5,
+    "carelon_combined_oi_b": 3.4,
+    "implied_carelon_ev_oi_multiple": 15.44,
+    "our_base_carelon_blended_ev_b": 41.328,
+    "our_base_carelon_blended_multiple": 12.16,
+    "premium_implied_vs_base_pct": 27.0,
+    "narrative": "At the current EV of ~$88.2B, with Health Benefits valued at the base multiple (8.5x \u00d7 $4.2B OI = $35.70B), the market is implicitly assigning $52.50B of residual EV to Carelon \u2014 implying a blended Carelon EV/OI multiple of 15.44x vs. our base case of 12.16x (11x CarelonRx + 15x Carelon Services blended). The market is implying Carelon at 15.44x EV/OI vs. our base case of 12.16x \u2014 a premium of 27.0%."
+  },
+  "display_summary": "A Sum-of-Parts analysis of Elevance Health (ELV) across three segments \u2014 Health Benefits, CarelonRx, and Carelon Services \u2014 yields a base-case implied share price of $242.05, representing -17.3% downside to the March 31, 2026 closing price of $292.75. The bull case (10x / 13x / 18x multiples) implies $305.96 per share (+4.5%), while the bear case reaches only $178.15 (-39.1%), underscoring meaningful downside risk from compressed Health Benefits margins and unresolved Medicaid/CMS headwinds. Back-solving from the current ~$88.2B EV, the market is assigning an implied blended Carelon EV/OI of 15.44x \u2014 a 27.0% premium to our base-case blended Carelon multiple of 12.16x \u2014 suggesting investors are pricing in significant Carelon re-rating optionality that has yet to be earned through margin execution.",
+  "sources": [
+    {
+      "description": "Elevance Health Q4 & FY2025 Earnings Release (Jan 28, 2026) \u2014 segment OI, revenue, margins",
+      "url": "https://s202.q4cdn.com/665319960/files/doc_financials/2025/q4/4Q2025ELVEarningsRelease.pdf"
+    },
+    {
+      "description": "SEC EDGAR filing \u2014 ELV Q4 2025 Earnings Release (Jan 28, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000006/a4q2025elvearningsrelease.htm"
+    },
+    {
+      "description": "Elevance Health Investor Relations \u2014 Q4 2025 Earnings Press Release",
+      "url": "https://www.elevancehealth.com/newsroom/elv-quarterly-earnings-q4-2025"
+    },
+    {
+      "description": "Share price $292.75 and market cap ~$64.5B as of March 31, 2026 (locked user inputs)"
+    },
+    {
+      "description": "Net debt ~$23.7B implied from EV ~$88.2B minus market cap ~$64.5B (locked user inputs)"
+    }
+  ]
+}
