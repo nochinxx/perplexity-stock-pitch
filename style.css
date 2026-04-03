@@ -588,6 +588,122 @@ p { text-wrap: pretty; }
 }
 .callout-icon { flex-shrink: 0; margin-top: 2px; }
 
+/* Apples-to-apples comparison table */
+.apples-table-wrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-6);
+}
+
+.apples-table {
+  font-size: var(--text-sm);
+  width: 100%;
+}
+
+.apples-table thead tr {
+  border-bottom: 2px solid var(--color-border);
+}
+
+.apples-table th {
+  padding: var(--space-4) var(--space-5);
+  text-align: left;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.apples-th-metric {
+  color: var(--color-text-faint);
+  width: 22%;
+}
+
+.apples-th-elv {
+  background: rgba(212, 168, 67, 0.06);
+  color: var(--color-accent);
+  border-left: 1px solid var(--color-border-subtle);
+  width: 39%;
+}
+
+.apples-th-hum {
+  background: rgba(248, 113, 113, 0.05);
+  color: var(--color-red);
+  border-left: 1px solid var(--color-border-subtle);
+  width: 39%;
+}
+
+.apples-ticker {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  padding: 1px var(--space-2);
+  border-radius: var(--radius-sm);
+  margin-right: var(--space-2);
+  letter-spacing: 0.04em;
+}
+
+.elv-ticker {
+  background: rgba(212, 168, 67, 0.15);
+  color: var(--color-accent);
+}
+
+.hum-ticker {
+  background: rgba(248, 113, 113, 0.15);
+  color: var(--color-red);
+}
+
+.apples-table tbody tr {
+  border-bottom: 1px solid var(--color-border-subtle);
+  transition: background var(--transition);
+}
+
+.apples-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.apples-table tbody tr:hover {
+  background: var(--color-surface-2);
+}
+
+.apples-metric {
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  vertical-align: top;
+}
+
+.apples-elv {
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  background: rgba(212, 168, 67, 0.03);
+  border-left: 1px solid var(--color-border-subtle);
+  vertical-align: top;
+  line-height: 1.55;
+}
+
+.apples-hum {
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  background: rgba(248, 113, 113, 0.02);
+  border-left: 1px solid var(--color-border-subtle);
+  vertical-align: top;
+  line-height: 1.55;
+}
+
+.apples-accent { color: var(--color-accent) !important; font-weight: 600 !important; }
+.apples-warn   { color: var(--color-red)    !important; font-weight: 600 !important; }
+
 /* ============================================================= */
 /* SECTION 4: CARELON                                             */
 /* ============================================================= */
