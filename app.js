@@ -246,7 +246,7 @@
   /* SECTION 7: SENSITIVITY TABLE                                 */
   /* ----------------------------------------------------------- */
   const sensitivityData = {
-    currentPrice: 292.24,
+    currentPrice: 292.75,
     eps: [24, 26, 28, 31, 34],
     pe: [8, 10, 12, 14, 16],
     matrix: [
